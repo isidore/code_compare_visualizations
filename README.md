@@ -31,14 +31,11 @@ private void Create_pending_csvs(string path <b><s>= ""</s></b>)
 ## Sample 2
 
 <pre id='snippet-step1'>
-public void sendOutSeniorDiscounts(DataBase database, MailServer
-mailServer) {
-     List&lt;Customer> seniorCustomers =
-<b>database.getSeniorCustomers()</b>;
+public void sendOutSeniorDiscounts(DataBase database, MailServer mailServer) {
+     List&lt;Customer> seniorCustomers = <b>database.getSeniorCustomers()</b>;
      for (Customer customer : seniorCustomers) {
          Discount seniorDiscount = getSeniorDiscount();
-         String message = generateDiscountMessage(customer,
-seniorDiscount);
+         String message = generateDiscountMessage(customer, seniorDiscount);
          mailServer.sendMessage(customer, message);
      }
 }
@@ -50,16 +47,12 @@ href='#snippet-step1' title='Start of snippet'>anchor</a></sup>
 # ⇓
 <!-- nippet: step2 -->
 <pre id='snippet-step2'>
-public void sendOutSeniorDiscounts(DataBase database, MailServer
-mailServer) {
-     <b>Loader&lt;List&lt;Customer>> seniorCustomerLoader = () ->
-database.getSeniorCustomers();</b>
-     List&lt;Customer> seniorCustomers =
-<s>database.getSeniorCustomers()</s> <b>seniorCustomerLoader.load()</b>;
+public void sendOutSeniorDiscounts(DataBase database, MailServer mailServer) {
+     <b>Loader&lt;List&lt;Customer>> seniorCustomerLoader = () -> database.getSeniorCustomers();</b>
+     List&lt;Customer> seniorCustomers =<s>database.getSeniorCustomers()</s> <b>seniorCustomerLoader.load()</b>;
      for (Customer customer : seniorCustomers) {
          Discount seniorDiscount = getSeniorDiscount();
-         String message = generateDiscountMessage(customer,
-seniorDiscount);
+         String message = generateDiscountMessage(customer, seniorDiscount);
          mailServer.sendMessage(customer, message);
      }
 }
