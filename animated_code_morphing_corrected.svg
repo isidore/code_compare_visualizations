@@ -1,4 +1,5 @@
-<svg width="800" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="800" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
         <style type="text/css"><![CDATA[
             @keyframes morph {
@@ -6,16 +7,22 @@
                 50% {opacity: 0;}
                 100% {opacity: 1;}
             }
-            #code-sample1 { animation: morph 4s infinite alternate; }
-            #code-sample2 { animation: morph 4s infinite alternate; animation-delay: 2s; }
+            #code-sample1 { animation: morph 8s infinite alternate; }
+            #code-sample2 { animation: morph 8s infinite alternate; animation-delay: 4s; }
             text { font-family: monospace; font-size: 14px; }
         ]]></style>
     </defs>
-    <rect width="100%" height="100%" fill="white"/>
-    <text id="code-sample1" x="10" y="20" fill="black">
-        <tspan x='10' dy='1.2em'>public void sendOutSeniorDiscounts(DataBase database, MailServer mailServer) {</tspan><tspan x='10' dy='1.2em'>     List&lt;Customer&gt; seniorCustomers = database.getSeniorCustomers();</tspan><tspan x='10' dy='1.2em'>     for (Customer customer : seniorCustomers) {</tspan><tspan x='10' dy='1.2em'>         Discount seniorDiscount = getSeniorDiscount();</tspan><tspan x='10' dy='1.2em'>         String message = generateDiscountMessage(customer, seniorDiscount);</tspan><tspan x='10' dy='1.2em'>         mailServer.sendMessage(customer, message);</tspan><tspan x='10' dy='1.2em'>     }</tspan><tspan x='10' dy='1.2em'>}</tspan>
+    <rect width="100%" height="100%" fill="white" />
+    <text id="code-sample" x="10" y="20" fill="black" xml:space="preserve">
+        <tspan x='10' dy='1.2em'>private void Create_pending_csvs(string path</tspan>
+        <tspan x='10' dy='1.2em'>{</tspan>
+        <tspan x='10' dy='1.2em'>          // Some code</tspan>
+        <tspan x='10' dy='1.2em'>}</tspan>
     </text>
-    <text id="code-sample2" x="10" y="20" fill="black" style="opacity:0;">
-        <tspan x='10' dy='1.2em'>public void sendOutSeniorDiscounts(DataBase database, MailServer mailServer) {</tspan><tspan x='10' dy='1.2em'>     Loader&lt;List&lt;Customer&gt;&gt; seniorCustomerLoader = () -&gt; database.getSeniorCustomers();</tspan><tspan x='10' dy='1.2em'>     List&lt;Customer&gt; seniorCustomers = seniorCustomerLoader.load();</tspan><tspan x='10' dy='1.2em'>     for (Customer customer : seniorCustomers) {</tspan><tspan x='10' dy='1.2em'>         Discount seniorDiscount = getSeniorDiscount();</tspan><tspan x='10' dy='1.2em'>         String message = generateDiscountMessage(customer, seniorDiscount);</tspan><tspan x='10' dy='1.2em'>         mailServer.sendMessage(customer, message);</tspan><tspan x='10' dy='1.2em'>     }</tspan><tspan x='10' dy='1.2em'>}</tspan>
+    <text id="code-sample1" x="10" y="20" fill="black" xml:space="preserve">
+        <tspan x='10' dy='1.2em'>                                            = "")</tspan>
+    </text>
+    <text id="code-sample2" x="10" y="20" fill="black" style="opacity:0;" xml:space="preserve">
+        <tspan x='10' dy='1.2em'>                                            )</tspan>
     </text>
 </svg>
