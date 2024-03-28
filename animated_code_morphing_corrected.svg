@@ -64,9 +64,9 @@
 </text>
     <text id="code-sample2" x="10" y="20" fill="black" xml:space="preserve"
         style="background-color:yellow">
-<tspan x="10" dy="1.2em">                                            </tspan><tspan fill="red" style="font-weight:900" > )</tspan>
+<tspan x="10" dy="1.2em">                                            </tspan><tspan fill="green" style="font-weight:900" > )</tspan>
 </text>
     <rect x="750" y="10" width="40" height="40" fill="lightgrey" />
-    <text id="step1" x="762" y="35" fill="black" font-size="20px">1</text>
-    <text id="step2" x="762" y="35" fill="black" font-size="20px">2</text>
+    <text id="step1" x="755" y="40" fill="red"   style="font-size:40px; font-weight:900">1</text>
+    <text id="step2" x="755" y="40" fill="green" style="font-size:40px; font-weight:900">2</text>
 </svg>
