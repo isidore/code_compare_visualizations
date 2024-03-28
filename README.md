@@ -67,3 +67,4 @@ seniorDiscount);
 ## External Links
 
 * [Martin Fowler](https://martinfowler.com/articles/class-too-large.html#:~:text=Modify%20the%20calling%20method)
+* [java markdown creator](https://github.com/ScottBob/GenerateCodeCompare/blob/master/src/test/java/org/samples/SampleTests.java)
