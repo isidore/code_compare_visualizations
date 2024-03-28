@@ -49,7 +49,7 @@ href='#snippet-step1' title='Start of snippet'>anchor</a></sup>
 <pre id='snippet-step2'>
 public void sendOutSeniorDiscounts(DataBase database, MailServer mailServer) {
      <b>Loader&lt;List&lt;Customer>> seniorCustomerLoader = () -> database.getSeniorCustomers();</b>
-     List&lt;Customer> seniorCustomers =<s>database.getSeniorCustomers()</s> <b>seniorCustomerLoader.load()</b>;
+     List&lt;Customer> seniorCustomers =<s>database.getSeniorCustomers() </s> <b>seniorCustomerLoader.load()</b>;
      for (Customer customer : seniorCustomers) {
          Discount seniorDiscount = getSeniorDiscount();
          String message = generateDiscountMessage(customer, seniorDiscount);
