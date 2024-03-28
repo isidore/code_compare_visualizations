@@ -4,9 +4,8 @@
         <style type="text/css">
         <![CDATA[
               @keyframes morph {
-                  0% {opacity: 0;}
+                  0%, 100% {opacity: 0;}
                   50% {opacity: 1;}
-                  100% {opacity: 0;}
               }
               #code-sample1 { animation: morph 4s infinite alternate; }
               #code-sample2 { animation: morph 4s infinite alternate; animation-delay: 2s; }
