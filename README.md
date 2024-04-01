@@ -57,6 +57,11 @@ public void sendOutSeniorDiscounts(DataBase database, MailServer mailServer) {
      }
 }
 </pre>
+
+```md
+snippet-compare: demoStep1, demoStep2
+```
+
 ## External Links
 
 * [Martin Fowler](https://martinfowler.com/articles/class-too-large.html#:~:text=Modify%20the%20calling%20method)
